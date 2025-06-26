@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="最新Gemini 2.5 Pro中文版使用教程，提供Google Gemini最新模型的无限制使用方法，包含可靠Gemini中文版镜像网站推荐和注册指南，助您轻松使用Gemini AI。">
+    <meta name="keywords" content="Gemini, Gemini 2.5 Pro, Google Gemini, Gemini中文版, Gemini中文版镜像, AI聊天, Google AI, Gemini教程, Claude, ChatGPT">
+    <meta name="last-modified" content="2025-06-26">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Gemini中文版教程">
+    <title>Gemini 2.5 Pro中文版使用教程 - 最新Google AI无限制使用方法</title>
+    
+    <style>
+        :root {
+            --gradient: linear-gradient(135deg, #4285f4, #34a853, #fbbc04);
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+            color: #333;
+        }
+
+        .gradient-header {
+            background: var(--gradient);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: #2d3748;
+        }
+
+        .site-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .site-item {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 2rem;
+            overflow: hidden;
+        }
+
+        .site-item.theme-blue {
+            border-left: 5px solid #4285f4;
+        }
+        .site-item.theme-blue:hover {
+            background: linear-gradient(to right, rgba(66, 133, 244, 0.05), white);
+        }
+
+        .site-item.theme-green {
+            border-left: 5px solid #34a853;
+        }
+        .site-item.theme-green:hover {
+            background: linear-gradient(to right, rgba(52, 168, 83, 0.05), white);
+        }
+
+        .site-item.theme-yellow {
+            border-left: 5px solid #fbbc04;
+        }
+        .site-item.theme-yellow:hover {
+            background: linear-gradient(to right, rgba(251, 188, 4, 0.05), white);
+        }
+
+        .site-item.theme-red {
+            border-left: 5px solid #ea4335;
+        }
+        .site-item.theme-red:hover {
+            background: linear-gradient(to right, rgba(234, 67, 53, 0.05), white);
+        }
+
+        .site-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        }
+
+        .site-content {
+            flex: 1;
+        }
+
+        .site-item h3 {
+            color: #1a202c;
+            margin: 0 0 1rem 0;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .site-meta {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .site-type {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #64748b;
+        }
+
+        .site-link {
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .theme-blue .site-link {
+            background: #4285f4;
+        }
+        .theme-green .site-link {
+            background: #34a853;
+        }
+        .theme-yellow .site-link {
+            background: #fbbc04;
+            color: #333;
+        }
+        .theme-red .site-link {
+            background: #ea4335;
+        }
+
+        .site-link:hover {
+            transform: translateY(-2px);
+            filter: brightness(110%);
+        }
+
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .tag {
+            padding: 0.35rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .theme-blue .tag {
+            background: rgba(66, 133, 244, 0.1);
+            color: #4285f4;
+        }
+        .theme-green .tag {
+            background: rgba(52, 168, 83, 0.1);
+            color: #34a853;
+        }
+        .theme-yellow .tag {
+            background: rgba(251, 188, 4, 0.1);
+            color: #e8710a;
+        }
+        .theme-red .tag {
+            background: rgba(234, 67, 53, 0.1);
+            color: #ea4335;
+        }
+
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .feature-item {
+            background: #f7f7f7;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .update-time {
+            color: #666;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .site-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gradient-header">
+        <h1>Gemini 2.5 Pro 国内使用保姆教程</h1>
+        <p>支持 Gemini 2.5 Pro、Gemini 2.5 Flash 等全系列 Google AI 模型</p>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <!-- 自动更新时间 -->
+            <p class="update-time" id="update-time"></p>
+            
+            <h2>什么是中文版 Gemini 2.5 Pro？</h2>
+            <p><strong>中文版 Gemini 2.5 Pro</strong> 是 Google 最新推出的多模态 AI 助手，专为中文用户优化，提供强大的对话、分析和创作能力。作为 Google 最先进的 AI 模型，Gemini 2.5 Pro 在多个方面表现卓越：</p>
+            <ul>
+                <li><strong>多模态智能</strong>：支持文本、图像、音频、视频等多种输入格式，理解能力更全面。</li>
+                <li><strong>超长上下文</strong>：支持超过 200 万 token 的上下文窗口，处理长文档毫无压力。</li>
+                <li><strong>中文优化</strong>：针对中文语境深度优化，适用于编程、写作、分析等多种场景。</li>
+                <li><strong>实时响应</strong>：通过国内镜像站点，无需翻墙即可高速访问。</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>国内可用的中文版 Gemini 2.5 Pro 镜像网站推荐</h2>
+            <div class="site-list">
+                <div class="site-item theme-blue">
+                    <div class="site-content">
+                        <h3>一下AI</h3>
+                        <div class="tag-list">
+                            <span class="tag">Gemini 2.5 Pro</span>
+                            <span class="tag">Gemini 2.5 Flash</span>
+                            <span class="tag">GPT-4.0</span>
+                            <span class="tag">GPT-o1</span>
+                            <span class="tag">DeepSeek R1满血版</span>
+                            <span class="tag">Claude 4 Sonnet</span>
+                            <span class="tag">AI知识库</span>
+                            <span class="tag">Midjourney</span>
+                            <span class="tag">AI PPT</span>
+                            <span class="tag">Grok-3</span>
+                            <span class="tag">AI绘画</span>
+                        </div>
+                        <div class="site-meta">
+                            <div class="site-type">
+                                <span>类型：网站</span>
+                            </div>
+                            <a href="http://xsimplechat.com" class="site-link" target="_blank">立即访问</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="site-item theme-green">
+                    <div class="site-content">
+                        <h3>Lanjing Chat</h3>
+                        <div class="tag-list">
+                            <span class="tag">Gemini 2.5 Pro</span>
+                            <span class="tag">Gemini 2.5 Flash</span>
+                            <span class="tag">GPT-4.0</span>
+                            <span class="tag">GPT-o1</span>
+                            <span class="tag">DeepSeek R1 满血版</span>
+                            <span class="tag">Claude 3.7 Sonnet</span>
+                            <span class="tag">Grok</span>
+                            <span class="tag">AI 文件阅读</span>
+                            <span class="tag">多模态处理</span>
+                        </div>
+                        <div class="site-meta">
+                            <div class="site-type">
+                                <span>类型：网站</span>
+                            </div>
+                            <a href="http://chat.lanjingai.org" class="site-link" target="_blank">立即访问</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="site-item theme-yellow">
+                    <div class="site-content">
+                        <h3>Gemini 2.5 Pro 桌面版</h3>
+                        <div class="tag-list">
+                            <span class="tag">Gemini全系列模型</span>
+                            <span class="tag">GPT全系列模型</span>
+                            <span class="tag">Claude全系列模型</span>
+                            <span class="tag">客户端</span>
+                            <span class="tag">离线使用</span>
+                        </div>
+                        <div class="site-meta">
+                            <div class="site-type">
+                                <span>类型：电脑客户端</span>
+                            </div>
+                            <a href="https://xsimplechat.com/app_client/XSimpleChat-windows.zip" class="site-link" target="_blank">立即下载</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="site-item theme-red">
+                    <div class="site-content">
+                        <h3>Gemini for Chrome</h3>
+                        <div class="tag-list">
+                            <span class="tag">Chrome插件</span>
+                            <span class="tag">Gemini 2.5 Pro</span>
+                            <span class="tag">Gemini 2.5 Flash</span>
+                            <span class="tag">GPT-o1</span>
+                            <span class="tag">Claude 全系列模型</span>
+                            <span class="tag">浏览器集成</span>
+                        </div>
+                        <div class="site-meta">
+                            <div class="site-type">
+                                <span>类型：插件</span>
+                            </div>
+                            <a href="https://xsimplechat.com" class="site-link" target="_blank">获取插件</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>为什么选择中文版 Gemini 2.5 Pro？</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h3>多模态智能</h3>
+                    <p>支持文本、图像、音频、视频等多种格式的理解和生成。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>超长上下文</h3>
+                    <p>200万+ token窗口，处理长文档和复杂任务毫无压力。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>中文优化</h3>
+                    <p>专门针对中文语境优化，理解更准确，响应更自然。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>实时访问</h3>
+                    <p>通过镜像站点无需翻墙，国内高速访问体验。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Gemini 官网与中文版的区别</h2>
+            <div class="site-list">
+                <div class="site-item">
+                    <h3>Gemini 官网</h3>
+                    <ul>
+                        <li>需翻墙访问，国内连接不稳定</li>
+                        <li>多语言支持（中文优化程度有限）</li>
+                        <li>功能支持：Gemini 2.5 Pro、Gemini 2.5 Flash</li>
+                        <li>需使用 Google 账号登录</li>
+                        <li>免费额度有限，付费订阅较贵</li>
+                    </ul>
+                </div>
+                <div class="site-item">
+                    <h3>Gemini 中文版（镜像站）</h3>
+                    <ul>
+                        <li>无需翻墙，国内访问快速稳定</li>
+                        <li>专注中文优化，响应更准确</li>
+                        <li>支持更多模型：Gemini、GPT、Claude等</li>
+                        <li>支持国内邮箱或手机号注册</li>
+                        <li>价格更优惠，部分功能免费使用</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateGradient() {
+            const colors = [
+                '#4285f4,#34a853,#fbbc04',
+                '#ea4335,#4285f4,#34a853',
+                '#fbbc04,#ea4335,#4285f4',
+                '#34a853,#fbbc04,#ea4335'
+            ];
+            const randomColors = colors[Math.floor(Math.random() * colors.length)];
+            document.documentElement.style.setProperty(
+                '--gradient',
+                `linear-gradient(135deg, ${randomColors})`
+            );
+        }
+        
+        updateGradient();
+        setInterval(updateGradient, 10000);
+
+        // 自动更新时间
+        (function() {
+            function pad(n) {
+                return n < 10 ? '0' + n : n;
+            }
+            var now = new Date();
+            var year = now.getFullYear();
+            var month = pad(now.getMonth() + 1);
+            var day = pad(now.getDate());
+            var today = `${year}/${month}/${day}`;
+            var updateElem = document.getElementById('update-time');
+            if (updateElem) {
+                updateElem.textContent = '更新时间：' + today;
+            }
+        })();
+    </script>
+</body>
+</html>
