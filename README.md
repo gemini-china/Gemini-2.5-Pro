@@ -1,6 +1,6 @@
-# Gemini 2.5 Pro 国内使用保姆教程
+# Gemini 2.5 Pro 国内使用保姆教程【2025年9月更新】
 
-**更新时间：2025/07/20** 
+**更新时间：2025/09/09** 
 
 ## 什么是中文版 Gemini 2.5 Pro？
 
@@ -20,7 +20,7 @@
 **支持模型**：
 - Gemini 2.5 Pro
 - Gemini 2.5 Flash
-- GPT-4.0
+- GPT-5
 - GPT-o1
 - DeepSeek R1满血版
 - Claude 4 Sonnet
@@ -37,7 +37,7 @@
 **支持模型**：
 - Gemini 2.5 Pro
 - Gemini 2.5 Flash
-- GPT-4.0
+- GPT-5
 - GPT-o1
 - DeepSeek R1 满血版
 - Claude 3.7 Sonnet
