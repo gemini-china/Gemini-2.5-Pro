@@ -1,6 +1,6 @@
 # Gemini 2.5 Pro 国内使用保姆教程【2025年9月更新】
 
-**更新时间：2025/09/16** 
+**更新时间：2025/09/22** 
 
 ## 什么是中文版 Gemini 2.5 Pro？
 
@@ -32,7 +32,7 @@
 
 ### 2. Lanjing Chat
 **网站类型**：在线平台  
-**访问地址**：[http://chat.lanjingai.org](http://chat.lanjingai.org)
+**访问地址**：[http://ai.lanjingai.org](http://ai.lanjingai.org)
 
 **支持模型**：
 - Gemini 2.5 Pro
@@ -40,7 +40,7 @@
 - GPT-5
 - GPT-o1
 - DeepSeek R1 满血版
-- Claude 3.7 Sonnet
+- Claude 4 Sonnet
 - Grok
 - AI 文件阅读
 - 多模态处理
